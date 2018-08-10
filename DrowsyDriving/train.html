@@ -1,0 +1,68 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Drowsy Driver</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-teal.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="panel joystick-panel">
+
+    <div class="panel-row panel-row-top">
+
+      <div class="panel-cell panel-cell-left panel-cell-fill">
+        <p class="help-text">
+        Click to add the <br/>
+        current camera <br/>
+        view as an example <br/>
+        for that control
+        </p>
+      </div><!-- ./panel-cell -->
+
+      <div class="panel-cell panel-cell-center">
+        <div class="thumb-box">
+          <div class="thumb-box-outer">
+            <div class="thumb-box-inner">
+              <canvas class="thumb" width=224 height=224 id="up-thumb"></canvas>
+            </div>
+            <button class="record-button" id="up"/><span>Add Sample</span></button>
+          </div>
+          <p>
+            <span id="up-total">0</span> examples
+          </p>
+        </div>
+      </div><!-- ./panel-cell -->
+
+      <div class="panel-cell panel-cell-right panel-cell-fill">
+      </div><!-- ./panel-cell -->
+
+    </div><!-- /.panel-row -->
+
+
+    <div class="panel-row panel-row-bottom">
+
+      <div class="panel-cell panel-cell-left panel-cell-fill">
+      </div><!-- ./panel-cell -->
+
+      <div class="panel-cell panel-cell-center">
+        <div class="thumb-box">
+          <div class="thumb-box-outer">
+            <div class="thumb-box-inner">
+              <canvas class="thumb" width=224 height=224 id="down-thumb"></canvas>
+            </div>
+            <button class="record-button" id="down"/><span>Add Sample</span></button>
+          </div>
+          <p>
+            <span id="down-total">0</span> examples
+          </p>
+        </div>
+      </div><!-- ./panel-cell -->
+
+      <div class="panel-cell panel-cell-right panel-cell-fill">
+      </div>
+</body>
